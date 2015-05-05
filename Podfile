@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'iOS-Slide-Menu'
+pod 'NYTPhotoViewer'
+pod 'UIActivityIndicator-for-SDWebImage'
+pod 'FMMosaicLayout'

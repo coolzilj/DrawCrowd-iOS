@@ -1,27 +1,26 @@
 //
-//  ViewController.m
+//  LeftMenuViewController.m
 //  DrawCrowd
 //
 //  Created by liujin on 15/5/4.
 //  Copyright (c) 2015年 Jin Liu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LeftMenuViewController.h"
 
-@interface ViewController ()
+@interface LeftMenuViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LeftMenuViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
 
 @end

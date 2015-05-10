@@ -6,22 +6,22 @@
 //  Copyright (c) 2015年 Jin Liu. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "ProjectCell.h"
+#import "NewestViewController.h"
+#import "NewestProjectCell.h"
 #import "Project.h"
 #import "Network.h"
 #import <MJRefresh/MJRefresh.h>
-#import <iOS-Slide-Menu/SlideNavigationController.h>
+//#import <iOS-Slide-Menu/SlideNavigationController.h>
 #import <FMMosaicLayout/FMMosaicLayout.h>
 #import <NYTPhotoViewer/NYTPhotosViewController.h>
 #import <UIActivityIndicator-for-SDWebImage/UIImageView+UIActivityIndicatorForSDWebImage.h>
 
-@interface MainViewController () <SlideNavigationControllerDelegate, NYTPhotosViewControllerDelegate, FMMosaicLayoutDelegate>
+@interface NewestViewController () <NYTPhotosViewControllerDelegate, FMMosaicLayoutDelegate>
 @property (nonatomic, strong) NSMutableArray *projectsArray;
 @property (nonatomic) NSInteger page;
 @end
 
-@implementation MainViewController
+@implementation NewestViewController
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -40,6 +40,10 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 #pragma mark private methods
@@ -95,9 +99,9 @@
 
 #pragma mark <SlideNavigationControllerDelegate>
 
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
-    return YES;
-}
+//- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+//    return YES;
+//}
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -124,7 +128,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * const reuseIdentifier = @"ProjectCell";
-    ProjectCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    NewestProjectCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     Project *project = _projectsArray[indexPath.row];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [cell.imageView setImageWithURL:[NSURL URLWithString:project.medium_image]
@@ -141,7 +145,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ProjectCell *selected = (ProjectCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    NewestProjectCell *selected = (NewestProjectCell *)[collectionView cellForItemAtIndexPath:indexPath];
     if (!selected.imageView.image) {
         return;
     }
@@ -165,8 +169,20 @@
 }
 
 - (UIView *)photosViewController:(NYTPhotosViewController *)photosViewController referenceViewForPhoto:(id<NYTPhoto>)photo {
-    ProjectCell *cell = (ProjectCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:[_projectsArray indexOfObject:photo] inSection:0]];
+    NewestProjectCell *cell = (NewestProjectCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:[_projectsArray indexOfObject:photo] inSection:0]];
     return cell;
+}
+
+#pragma mark - XLPagerTabStripViewControllerDelegate
+
+-(NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+{
+    return @"最新";
+}
+
+-(UIColor *)colorForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+{
+    return [UIColor whiteColor];
 }
 
 @end

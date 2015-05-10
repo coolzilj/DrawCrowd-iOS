@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3B6FD9D5DA81B27A1F334B79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D1A037306BC34CF2AF1B0B /* libPods.a */; };
-		443A09C71AF7E64B00529080 /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A09C61AF7E64B00529080 /* ProjectCell.m */; };
+		443065D61AF9B50100D547F8 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443065D51AF9B50100D547F8 /* DiscoverViewController.m */; };
+		443065D91AF9D37500D547F8 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443065D81AF9D37500D547F8 /* RankViewController.m */; };
+		443A09C71AF7E64B00529080 /* NewestProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A09C61AF7E64B00529080 /* NewestProjectCell.m */; };
 		443A09CC1AF7EC0500529080 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A09CB1AF7EC0500529080 /* Network.m */; };
+		4452B0F81AFB4D0B00966A71 /* RankProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4452B0F71AFB4D0B00966A71 /* RankProjectCell.m */; };
 		4496E1731AF77AF600233BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1721AF77AF600233BBC /* main.m */; };
 		4496E1761AF77AF600233BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1751AF77AF600233BBC /* AppDelegate.m */; };
 		4496E17C1AF77AF600233BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4496E17A1AF77AF600233BBC /* Main.storyboard */; };
@@ -17,7 +20,7 @@
 		4496E1811AF77AF600233BBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4496E17F1AF77AF600233BBC /* LaunchScreen.xib */; };
 		4496E18D1AF77AF600233BBC /* DrawCrowdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E18C1AF77AF600233BBC /* DrawCrowdTests.m */; };
 		4496E1991AF77D8000233BBC /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1981AF77D8000233BBC /* LeftMenuViewController.m */; };
-		4496E1A11AF7856B00233BBC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1A01AF7856B00233BBC /* MainViewController.m */; };
+		4496E1A11AF7856B00233BBC /* NewestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1A01AF7856B00233BBC /* NewestViewController.m */; };
 		4496E1A41AF79B8600233BBC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496E1A31AF79B8600233BBC /* Project.m */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +36,16 @@
 
 /* Begin PBXFileReference section */
 		24D95D2BF1E61D8E19873335 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		443A09C51AF7E64B00529080 /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
-		443A09C61AF7E64B00529080 /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
+		443065D41AF9B50100D547F8 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		443065D51AF9B50100D547F8 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		443065D71AF9D37500D547F8 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		443065D81AF9D37500D547F8 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		443A09C51AF7E64B00529080 /* NewestProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewestProjectCell.h; sourceTree = "<group>"; };
+		443A09C61AF7E64B00529080 /* NewestProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewestProjectCell.m; sourceTree = "<group>"; };
 		443A09CA1AF7EC0500529080 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		443A09CB1AF7EC0500529080 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		4452B0F61AFB4D0B00966A71 /* RankProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankProjectCell.h; sourceTree = "<group>"; };
+		4452B0F71AFB4D0B00966A71 /* RankProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankProjectCell.m; sourceTree = "<group>"; };
 		4496E16D1AF77AF600233BBC /* DrawCrowd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawCrowd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4496E1711AF77AF600233BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4496E1721AF77AF600233BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +61,8 @@
 		4496E1981AF77D8000233BBC /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		4496E19D1AF7815700233BBC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4496E19E1AF782A300233BBC /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		4496E19F1AF7856B00233BBC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		4496E1A01AF7856B00233BBC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4496E19F1AF7856B00233BBC /* NewestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewestViewController.h; sourceTree = "<group>"; };
+		4496E1A01AF7856B00233BBC /* NewestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewestViewController.m; sourceTree = "<group>"; };
 		4496E1A21AF79B8600233BBC /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
 		4496E1A31AF79B8600233BBC /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		850A968BCBFBAF24F0E822F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +88,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443065D11AF9B38A00D547F8 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				443065D31AF9B3DE00D547F8 /* Child */,
+				443065D41AF9B50100D547F8 /* DiscoverViewController.h */,
+				443065D51AF9B50100D547F8 /* DiscoverViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		443065D21AF9B39E00D547F8 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		443065D31AF9B3DE00D547F8 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				4496E19F1AF7856B00233BBC /* NewestViewController.h */,
+				4496E1A01AF7856B00233BBC /* NewestViewController.m */,
+				443065D71AF9D37500D547F8 /* RankViewController.h */,
+				443065D81AF9D37500D547F8 /* RankViewController.m */,
+			);
+			name = Child;
+			sourceTree = "<group>";
+		};
+		4452B0F51AFB4C4900966A71 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				443A09C51AF7E64B00529080 /* NewestProjectCell.h */,
+				443A09C61AF7E64B00529080 /* NewestProjectCell.m */,
+				4452B0F61AFB4D0B00966A71 /* RankProjectCell.h */,
+				4452B0F71AFB4D0B00966A71 /* RankProjectCell.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
 		4496E1641AF77AF600233BBC = {
 			isa = PBXGroup;
 			children = (
@@ -146,10 +194,10 @@
 		4496E1961AF77D4900233BBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				443065D21AF9B39E00D547F8 /* Recommend */,
+				443065D11AF9B38A00D547F8 /* Discover */,
 				4496E1971AF77D8000233BBC /* LeftMenuViewController.h */,
 				4496E1981AF77D8000233BBC /* LeftMenuViewController.m */,
-				4496E19F1AF7856B00233BBC /* MainViewController.h */,
-				4496E1A01AF7856B00233BBC /* MainViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -176,8 +224,7 @@
 		4496E19C1AF77E7000233BBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				443A09C51AF7E64B00529080 /* ProjectCell.h */,
-				443A09C61AF7E64B00529080 /* ProjectCell.m */,
+				4452B0F51AFB4C4900966A71 /* Discover */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -336,12 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4496E1761AF77AF600233BBC /* AppDelegate.m in Sources */,
+				443065D61AF9B50100D547F8 /* DiscoverViewController.m in Sources */,
 				4496E1991AF77D8000233BBC /* LeftMenuViewController.m in Sources */,
 				4496E1731AF77AF600233BBC /* main.m in Sources */,
 				4496E1A41AF79B8600233BBC /* Project.m in Sources */,
-				4496E1A11AF7856B00233BBC /* MainViewController.m in Sources */,
+				4496E1A11AF7856B00233BBC /* NewestViewController.m in Sources */,
 				443A09CC1AF7EC0500529080 /* Network.m in Sources */,
-				443A09C71AF7E64B00529080 /* ProjectCell.m in Sources */,
+				4452B0F81AFB4D0B00966A71 /* RankProjectCell.m in Sources */,
+				443A09C71AF7E64B00529080 /* NewestProjectCell.m in Sources */,
+				443065D91AF9D37500D547F8 /* RankViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

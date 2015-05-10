@@ -6,6 +6,6 @@
 //  Copyright (c) 2015年 Jin Liu. All rights reserved.
 //
 
-@interface ProjectCell : UICollectionViewCell
+@interface NewestProjectCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

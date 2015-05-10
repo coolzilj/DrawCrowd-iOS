@@ -12,8 +12,4 @@
 #define SCREEN_WIDTH    CGRectGetWidth(self.window.bounds)
 #define SCREEN_HEIGHT    CGRectGetHeight(self.window.bounds)
 
-//static NSString * const BASE_URL         = @"http://www.dbmeizi.com";
-
-//static NSString * const MEIZI_ALL        = @"/m/category_new/10";
-
 #endif

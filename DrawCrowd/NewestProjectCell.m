@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 Jin Liu. All rights reserved.
 //
 
-#import "ProjectCell.h"
+#import "NewestProjectCell.h"
 
-@implementation ProjectCell
+@implementation NewestProjectCell
 
 @end

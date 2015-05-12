@@ -1,6 +1,8 @@
 # DrawCrowd-iOS
 An iOS browser for DrawCrowd.
 
+![screenshot](https://raw.githubusercontent.com/coolzilj/DrawCrowd-iOS/master/screenshot.png)
+
 ## Changelog
 
 ## Contributing
